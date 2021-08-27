@@ -18,7 +18,7 @@
 //
 // Import all of Bootstrap's CSS
 
-// @import "bootstrap/scss/bootstrap";
+ //@import "bootstrap/scss/bootstrap";
 
 // Option 2
 //
@@ -29,12 +29,16 @@ $enable-gradients: true;
 $enable-shadows: true;
 
 // Customize some defaults
-$body-color: #333;
+$body-color: #ffffff;
 $body-bg: #2E2E2E;
 $border-radius: .4rem;
-$success: #7952b3;
+$success: #00ACEE;
 $active-color: #00ACEE;
 
+// icons
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+// other
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
@@ -49,6 +53,7 @@ $active-color: #00ACEE;
 // @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
+
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
@@ -78,15 +83,66 @@ $active-color: #00ACEE;
 //
 // Custom styles
 //
-
+@import "animations.scss";
 @import "icon-list";
 
 body {
   padding: 3rem 1.5rem;
   background-color: $body-bg;
+  color: $body-color;
+  font-family: 'IBM Plex Mono', serif;
 }
 
 // Style Bootstrap icons
 .bi {
-  fill: currentColor;
+  fill: $body-color;
 }
+
+// some spacing styles
+.mt-0 {
+    margin-top: 0 !important;
+  }
+  
+  .ml-1 {
+    margin-left: ($spacer * .25) !important;
+  }
+  
+  .px-2 {
+    padding-left: ($spacer * .5) !important;
+    padding-right: ($spacer * .5) !important;
+  }
+  
+  .p-3 {
+    padding: $spacer !important;
+  }
+
+// first screen 
+.container {
+    .logo {
+        font-size: 48px;
+        padding-bottom: 5em;
+    }
+
+    .btn {
+        font-size: 24px;
+        border: 2px solid $active-color;
+        padding: 0.7em;
+        margin: 3em;
+        color: $active-color;
+        text-transform: uppercase;
+    }
+
+    .btn:hover {
+      color: $body-color;
+      transition: .7s;
+    }
+
+    .scroll {
+      margin-top: 4em;
+
+      i {
+        font-size: 4em;
+      }
+  }
+}
+
