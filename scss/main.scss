@@ -18,7 +18,7 @@
 //
 // Import all of Bootstrap's CSS
 
- //@import "bootstrap/scss/bootstrap";
+//@import "bootstrap/scss/bootstrap";
 
 // Option 2
 //
@@ -37,6 +37,9 @@ $active-color: #00ACEE;
 
 // icons
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+// font 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
 
 // other
 @import "bootstrap/scss/functions"; // Required
@@ -91,6 +94,14 @@ body {
   background-color: $body-bg;
   color: $body-color;
   font-family: 'IBM Plex Mono', serif;
+
+  h2 {
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 400;
+  }
 }
 
 // Style Bootstrap icons
@@ -99,50 +110,109 @@ body {
 }
 
 // some spacing styles
-.mt-0 {
-    margin-top: 0 !important;
-  }
-  
-  .ml-1 {
-    margin-left: ($spacer * .25) !important;
-  }
-  
-  .px-2 {
-    padding-left: ($spacer * .5) !important;
-    padding-right: ($spacer * .5) !important;
-  }
-  
-  .p-3 {
-    padding: $spacer !important;
-  }
+.mr-auto {
+  margin: 0 auto !important;
+}
+
+.ml-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
 
 // first screen 
 .container {
-    .logo {
-        font-size: 48px;
-        padding-bottom: 5em;
-    }
+  .logo {
+    font-size: 48px;
+    padding-bottom: 5em;
 
-    .btn {
-        font-size: 24px;
-        border: 2px solid $active-color;
-        padding: 0.7em;
-        margin: 3em;
-        color: $active-color;
-        text-transform: uppercase;
-    }
-
-    .btn:hover {
+    a {
       color: $body-color;
-      transition: .7s;
     }
 
-    .scroll {
-      margin-top: 4em;
+    a:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
 
-      i {
-        font-size: 4em;
-      }
+  .btn {
+    font-size: 24px;
+    border: 2px solid $active-color;
+    padding: 0.7em;
+    margin: 3em;
+    color: $active-color;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .btn:hover {
+    color: $body-color;
+  }
+
+  .scroll {
+    margin-top: 4em;
+
+    i {
+      font-size: 4em;
+    }
   }
 }
 
+// second screen
+
+.container-lg {
+  .title {
+    margin-top: 3em;
+    padding-bottom: 2em;
+
+    h2 {
+      color: #00ACEE;
+    }
+
+    p {
+      padding-top: 2em;
+    }
+  }
+
+  .moreBtn a {
+    margin-top: 2em;
+  }
+}
+
+
+// third screen
+
+.stack {
+  margin-top: 10em;
+
+  .left {
+
+    .title {
+      color: $active-color;
+    }
+
+    .subTitle {
+      padding-top: 1em;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .right img {
+    width: 20em;
+    height: 7em;
+  }
+}

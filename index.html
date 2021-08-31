@@ -1,27 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Main Page</title>
-</head>
-<body>
-    <div class="container header">
-        <div class="logo">moek</div>
-        <h1>Hello, <br>
-        I'm Michael Myers</h1>
-        <p>Developer, UX/UI Designer, Freelancer</p>
-        <button type="button" class="btn btn-outline-primary">Contact me</button>
 
-        <div class="scroll bounce text-center">
-            <i class="bi bi-arrow-down"></i>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Main Page</title>
+</head>
+
+<body>
+  <div class="container header">
+    <div class="logo"> <a href="index.html">moek</a></div>
+    <h1>Hello, <br>
+      I'm Michael Myers</h1>
+    <p>Developer, UX/UI Designer, Freelancer</p>
+    <a class="btn btn-outline-primary" href="mailto:moekdeveloper@gmail.com" role="button">Contact me</a>
+
+    <div class="scroll bounce text-center">
+      <i class="bi bi-arrow-down"></i>
+    </div>
+
+
+  </div>
+
+  <div class="container-lg">
+    <div class="title">
+      <h2>My Portfolio</h2>
+      <p>A small gallery of my latest projects. <br>
+        Feel free yourself to explore all of these.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <a href="https://www.behance.net/gallery/125697155/Portfolio-Website" target="_blank">
+          <img src="/assets/img/ui.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Figma UI Portfolio Design" />
+        </a>
+
+        <a href="https://www.behance.net/gallery/125092779/Website-for-Interior-Design-Studio" target="_blank">
+          <img src="assets/img/adci.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="HTML CSS Website" />
+        </a>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <a href="https://www.behance.net/gallery/125322727/Landing-Page-Daily-UI-003" target="_blank">
+          <img src="/assets/img/ui2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="UI landing page design" />
+        </a>
+
+        <a href="https://www.behance.net/gallery/125094545/Shopify-Website" target="_blank">
+          <img src="assets/img/clothesbrand.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="shopify website" />
+        </a>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <a href="https://www.behance.net/gallery/126275093/Web-Studio-Website" target="_blank">
+          <img src="assets/img/wpmyers.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="wordpress website" />
+        </a>
+
+        <a href="https://www.behance.net/gallery/125094135/Portfolio-Website" target="_blank">
+          <img src="assets/img/oldportfoliowebsite.jpg" class="w-100 shadow-1-strong rounded mb-4"
+            alt="portfolio html css landing page" />
+        </a>
+      </div>
+
+      <div class="moreBtn mr-auto">
+        <a href="https://behance.net/devmoek" target="_blank" class="btn btn-primary btn-lg" role="button"
+          aria-pressed="true">More</a>
+      </div>
+    </div>
+    <!-- Gallery -->
+
+  </div>
+
+
+  <div class="container-md stack">
+    <div class="row">
+
+      <div class="col-lg-6 mb-6 mb-lg-0 left">
+        <div class="title">
+          <h2>Me, Myself and I</h2>
+        </div>
+        <div class="subTitle">
+          <p>I’m a web developer based in Russia, in a little Siberian city Omsk. Day to day I’m trying to learn new
+            things because it’s a lot. I think they add every single day.</p>
         </div>
 
+        <div class="subTitle">
+          <p>My passion is frontend. Create a vision part of websites. I have tried php, pretty good. Not js and stuff
+            tho.</p>
+        </div>
 
+        <div class="subTitle">
+          <p>I currently work remotely with a little base of clients and are open for a new opportunites.</p>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 right">
+        <img src="assets/icons/stack first row.svg" alt="html css js logo"></img>
+        <img src="assets/icons/stack second row.svg" alt="wordpress github npm logo"></img>
+        <img src="assets/icons/stack third row.svg" alt="sass bootstrap tailwind logo"></img>    
+        </div>
     </div>
-  
-    
+  </div>
+
+  <script src="js/assets/js/starter.js"></script>
 </body>
+
 </html>
