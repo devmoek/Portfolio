@@ -102,6 +102,23 @@ body {
   p {
     font-weight: 400;
   }
+
+  ::placeholder {
+    color: #DCDCDC;
+    opacity: 1;
+    padding-left: 10px;
+  }
+
+  .btn-outline-primary {
+    color: $active-color;
+    border-color: $active-color;
+  }
+
+  .btn-primary {
+    background: none;
+    border-color: $active-color;
+    color: $active-color;
+  }
 }
 
 // Style Bootstrap icons
@@ -168,7 +185,7 @@ body {
 
 // second screen
 
-.container-lg {
+.container-md {
   .title {
     margin-top: 3em;
     padding-bottom: 2em;
@@ -176,10 +193,10 @@ body {
     h2 {
       color: #00ACEE;
     }
-
-    p {
-      padding-top: 2em;
-    }
+  }
+  
+  .subTitle {
+    padding-bottom: 1em;
   }
 
   .moreBtn a {
@@ -214,5 +231,49 @@ body {
   .right img {
     width: 20em;
     height: 7em;
+  }
+}
+
+// fourth screen
+.container-lg {
+  margin-top: 10em;
+  .form {
+
+    .title {
+      color: $active-color;
+    }
+
+    input {
+      background-color: #4F4F4F;
+      color: #fff;
+      width: 100%;
+      margin-top: 1.5em;
+      height: 35px;
+      border: 0;
+    }   
+
+    .messageInp input {
+      height: 80px;
+      margin-bottom: 1em;
+    }
+
+    .submitBtn {
+      margin: 0 auto;
+    }
+  }
+  
+  .map {
+    #map { 
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%; 
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .map {
+      margin-top: 5em;
+    }
   }
 }
